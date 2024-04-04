@@ -96,4 +96,6 @@ public class Thirth_Person_CC : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
+
+
 }
