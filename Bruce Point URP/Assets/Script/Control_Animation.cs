@@ -10,6 +10,10 @@ public class Control_Animation : MonoBehaviour
     public GameObject BalaPlayer; // Objeto bala Bruce
     public Transform PointerBala; // Objeto Pointer de arma
 
+
+    public float tiempo; // Temporizador
+    public float tiempoRestante;
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -62,6 +66,18 @@ public class Control_Animation : MonoBehaviour
     // Instancia BalaBruce
     void Disparo()
     {
-        Instantiate(BalaPlayer, PointerBala.position, transform.rotation);
+        tiempoRestante = tiempoRestante - Time.deltaTime;
+        if (tiempoRestante <= 0)
+        {
+            Instantiate(BalaPlayer, PointerBala.position, transform.rotation);
+            Resetear();
+        }
+            
+    }
+
+    void Resetear()
+    {
+        tiempoRestante = tiempo;
+
     }
 }
