@@ -72,7 +72,7 @@ public class Control_Animation : MonoBehaviour
             Instantiate(BalaPlayer, PointerBala.position, transform.rotation);
             Resetear();
         }
-            
+
     }
 
     void Resetear()
