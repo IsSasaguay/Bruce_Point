@@ -8,12 +8,12 @@ public class Magia : MonoBehaviour
     public float Speed;
     void Start()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 1.5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Direccion * Speed * Time.deltaTime);
+        transform.Translate(Direccion*Speed*Time.deltaTime);
     }
 }

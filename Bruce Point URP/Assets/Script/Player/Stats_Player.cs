@@ -21,9 +21,9 @@ public class Stats_Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "BalaEnemigo")
+        if (collision.transform.tag == "MagiaEnemigo")
         {
-            vida = vida - 10;
+            vida = vida - 20;
             Destroy(collision.transform.gameObject);
 
             if(vida == 0)
