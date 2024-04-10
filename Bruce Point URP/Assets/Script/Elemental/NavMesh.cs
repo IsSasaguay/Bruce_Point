@@ -129,7 +129,7 @@ public class NavMesh : MonoBehaviour
 
         if (tiemporestante <= 0f)
         {
-            Instantiate(Ataque, PointerAtaque.position, Quaternion.identity);
+            Instantiate(Ataque, PointerAtaque.position, transform.rotation);
             Resetear();
         }
     }
@@ -140,7 +140,7 @@ public class NavMesh : MonoBehaviour
     
     void Explo()
     {
-       Instantiate(Explosion, PointerExplosion.position, Quaternion.identity);
+       Instantiate(Explosion, PointerExplosion.position, transform.rotation);
        //Particulaexplosion.Play();
     }
     void DestruirObjeto()

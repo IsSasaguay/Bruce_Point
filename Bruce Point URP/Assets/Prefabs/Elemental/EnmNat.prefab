@@ -274,7 +274,7 @@ MonoBehaviour:
   LookRadius: 20
   DistanciaDisparo: 15
   animator: {fileID: 0}
-  Ataque: {fileID: 1590367602216814775, guid: 1b39893e0e98d334a9ae531f560d0117, type: 3}
+  Ataque: {fileID: 3272460085612964009, guid: 06accdad0d296e645908ccf80966d647, type: 3}
   PointerAtaque: {fileID: 1952681079040868263}
   Explosion: {fileID: 6494934677297280439, guid: 0412d0a055df1354e8a4e8f6de55b440,
     type: 3}
