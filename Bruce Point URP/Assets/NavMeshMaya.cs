@@ -70,18 +70,20 @@ public class NavMeshMaya : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Player") //Ataque patada Bruce
+        if (collision.transform.tag == "PatadaPlayer") //Ataque patada Bruce
         {
             vida = vida - 10;
 
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
+             
                 DestruirObjeto();
 
             }
 
         }
+
         if (collision.transform.tag == "AttackPlayer") //Ataque disparo bruce
         {
             vida = vida - 20;
@@ -89,6 +91,7 @@ public class NavMeshMaya : MonoBehaviour
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
+                
                 DestruirObjeto();
 
             }
@@ -115,7 +118,7 @@ public class NavMeshMaya : MonoBehaviour
     void DestruirObjeto()
     {
         // Destruye este objeto
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 5f);
 
     }
 }
