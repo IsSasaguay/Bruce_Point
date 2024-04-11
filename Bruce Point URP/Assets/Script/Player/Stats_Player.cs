@@ -31,6 +31,19 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+
+        }
+
+        if (collision.transform.tag == "AtaqueEnemigo")
+        {
+            vida = vida - 10;
+            Destroy(collision.transform.gameObject);
+
+            if (vida == 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }
