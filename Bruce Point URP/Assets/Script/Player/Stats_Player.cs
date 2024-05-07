@@ -46,4 +46,15 @@ public class Stats_Player : MonoBehaviour
             }
         }
     }
+    //Efectos Triggers
+    public void VidaVeneno()
+    {
+        vida = vida - 25 ;
+    }
+
+    public void Flechas()
+    {
+        
+        
+    }
 }
