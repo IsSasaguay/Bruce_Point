@@ -18,8 +18,10 @@ public class NavMesh : MonoBehaviour
     public GameObject Ataque;
     public Transform PointerAtaque;
     public GameObject Explosion;
+    public GameObject Gema;
     public Transform PointerExplosion;
-   // public ParticleSystem Particulaexplosion;
+    public Transform PointerGema;
+    // public ParticleSystem Particulaexplosion;
 
     //Variables temporizador ataque
     public float tiempo;
@@ -81,6 +83,7 @@ public class NavMesh : MonoBehaviour
                 animator.SetBool("Muerte", true);
                 CancelInvoke("DisparaMagia");
                 Invoke("Explo", 2f);
+                Invoke("GemasPoder", 4f);
 
                 DestruirObjeto();
 
@@ -96,12 +99,14 @@ public class NavMesh : MonoBehaviour
                 animator.SetBool("Muerte", true);
                 CancelInvoke("DisparaMagia");
                 Invoke("Explo", 2f);
+                Invoke("GemasPoder", 4f);
 
                 DestruirObjeto();
 
             }
 
         }
+
     }
 
     //Codigo Gizmos de color para rangos
@@ -137,17 +142,24 @@ public class NavMesh : MonoBehaviour
     {
         tiemporestante = tiempo;
     }
-    
+    //Particulaexplosion
     void Explo()
     {
        Instantiate(Explosion, PointerExplosion.position, transform.rotation);
-       //Particulaexplosion.Play();
+       
+        
     }
+    // Destruye este objeto
     void DestruirObjeto()
     {
-        // Destruye este objeto
+        
         Destroy(gameObject, 4f);
         
+    }
+    //Gema 
+    void GemasPoder()
+    {
+        Instantiate(Gema, PointerGema.position, transform.rotation);
     }
 }
 

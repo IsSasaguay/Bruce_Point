@@ -8,6 +8,8 @@ public class Stats_Player : MonoBehaviour
 
     public int vida = 100;
     public GameObject panel;
+    public int monedas;
+    public int gemas;
     void Start()
     {
         
@@ -45,7 +47,23 @@ public class Stats_Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+        //Contador monedas
+        if (collision.transform.tag == "Coin")
+        {
+            monedas = monedas + 1;
+            Destroy(collision.transform.gameObject);
+        }
+
+        //Contador gemas
+        if (collision.transform.tag == "Gema")
+        {
+            gemas = gemas + 1;
+            Destroy(collision.transform.gameObject);
+        }
     }
+
+
+
     //Efectos Triggers
     public void VidaVeneno()
     {
@@ -54,7 +72,7 @@ public class Stats_Player : MonoBehaviour
 
     public void Flechas()
     {
-        
-        
+
+        vida = vida - 25;
     }
 }

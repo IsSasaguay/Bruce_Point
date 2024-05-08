@@ -8,6 +8,8 @@ TagManager:
   - MagiaEnemigo
   - AtaqueEnemigo
   - PatadaPlayer
+  - Coin
+  - Gema
   layers:
   - Default
   - TransparentFX

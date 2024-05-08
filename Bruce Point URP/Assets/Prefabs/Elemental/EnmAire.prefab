@@ -278,7 +278,9 @@ MonoBehaviour:
   PointerAtaque: {fileID: 4730597015310429837}
   Explosion: {fileID: 6494934677297280439, guid: 5829e6a6b6633d247977b68b21e22506,
     type: 3}
+  Gema: {fileID: 1388044689346095351, guid: 83d169803f44d084e97a26a7cc1331e3, type: 3}
   PointerExplosion: {fileID: 4774003917056500529}
+  PointerGema: {fileID: 81644286733042849}
   tiempo: 2.25
   tiemporestante: 0
   vida: 80
@@ -320,6 +322,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9171894966942985149}
     m_Modifications:
+    - target: {fileID: 3884086192514999396, guid: 52c3ba274a652db4a9db60d63e16b082,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884086192514999396, guid: 52c3ba274a652db4a9db60d63e16b082,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.171
+      objectReference: {fileID: 0}
     - target: {fileID: 4928304325707088614, guid: 52c3ba274a652db4a9db60d63e16b082,
         type: 3}
       propertyPath: m_RootOrder
@@ -397,6 +409,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c3ba274a652db4a9db60d63e16b082, type: 3}
+--- !u!4 &81644286733042849 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3884086192514999396, guid: 52c3ba274a652db4a9db60d63e16b082,
+    type: 3}
+  m_PrefabInstance: {fileID: 3802450802811003077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4730597015310429837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8458727876868116040, guid: 52c3ba274a652db4a9db60d63e16b082,
