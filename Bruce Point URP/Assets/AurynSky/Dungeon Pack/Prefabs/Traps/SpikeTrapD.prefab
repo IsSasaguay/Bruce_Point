@@ -94,9 +94,10 @@ GameObject:
   - component: {fileID: 4616488554291980}
   - component: {fileID: 33605891467109624}
   - component: {fileID: 23771608123197894}
+  - component: {fileID: 1113341059060906444}
   m_Layer: 0
   m_Name: SpearD (4)
-  m_TagString: Untagged
+  m_TagString: Flecha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,6 +167,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1113341059060906444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311725443889936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.02, y: 2.6755412, z: 2.03}
+  m_Center: {x: 0.0000019073486, y: 0.35385406, z: 0.0000004246831}
 --- !u!1 &1338808813722488
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,8 +274,9 @@ GameObject:
   - component: {fileID: 4753028538822310}
   - component: {fileID: 33776582947446772}
   - component: {fileID: 23248802485315498}
-  - component: {fileID: 95846521961778924}
-  - component: {fileID: 114953712324284294}
+  - component: {fileID: 7470916650909406621}
+  - component: {fileID: 2753112756457771329}
+  - component: {fileID: 8805085986034009418}
   m_Layer: 0
   m_Name: SpikeTrapD
   m_TagString: Untagged
@@ -343,7 +358,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &95846521961778924
+--- !u!95 &7470916650909406621
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -364,7 +379,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &114953712324284294
+--- !u!114 &2753112756457771329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -377,6 +392,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spikeTrapAnim: {fileID: 0}
+--- !u!65 &8805085986034009418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498791207746926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.18, z: 2.0000007}
+  m_Center: {x: -0.00000017881393, y: 0.033333294, z: 0.00000011920929}
 --- !u!1 &1533954398984724
 GameObject:
   m_ObjectHideFlags: 0

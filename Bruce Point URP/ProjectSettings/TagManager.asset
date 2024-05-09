@@ -10,6 +10,7 @@ TagManager:
   - PatadaPlayer
   - Coin
   - Gema
+  - Flecha
   layers:
   - Default
   - TransparentFX

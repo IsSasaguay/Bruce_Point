@@ -20,4 +20,8 @@ public class SuscriptorVeneno : MonoBehaviour
     {
         Flechas.SetActive(true);
     }
+    public void OcultarFlechas()
+    {
+        Flechas.SetActive(false);
+    }
 }
