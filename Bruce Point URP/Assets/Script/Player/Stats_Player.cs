@@ -10,8 +10,8 @@ public class Stats_Player : MonoBehaviour
     public GameObject panel;
     public int monedas;
     public int gemas;
-    public float tiempo;
-    public float tiemporestante;
+    public float tiempo = 1f;
+    public float tiemporestante = 0f;
     
     void Start()
     {
@@ -70,15 +70,21 @@ public class Stats_Player : MonoBehaviour
             DanoFlechas();
             Destroy(collision.transform.gameObject);
         }
+
+        //Daño por veneno
+        if (collision.transform.tag == "Veneno")
+        {
+            InvokeRepeating ("DanoVeneno", 0f, tiempo); //Daño continuo de veneno
+
+        }
     }
 
 
 
-    //Efectos Triggers
+    //Daño TRAMPAS
     public void DanoVeneno()
     {
-        tiemporestante = tiemporestante - Time.deltaTime;
-
+        tiemporestante = tiemporestante - Time.deltaTime; //Daño continuo de veneno
         if (tiemporestante <= 0f)
         {
             vida = vida - 25;
@@ -92,6 +98,10 @@ public class Stats_Player : MonoBehaviour
     }
 
     public void DanoFlechas()
+    {
+        vida = vida - 25;
+    }
+    public void DanoFuego() //Daño trigger de fuego
     {
         vida = vida - 25;
     }
