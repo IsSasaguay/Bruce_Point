@@ -74,17 +74,15 @@ public class Stats_Player : MonoBehaviour
         //Daño por veneno
         if (collision.transform.tag == "Veneno")
         {
-            InvokeRepeating ("DanoVeneno", 0f, tiempo); //Daño continuo de veneno
+            InvokeRepeating ("DanoVeneno", 0f, tiempo); //Daño continuo de veneno y fuego
 
         }
     }
 
-
-
     //Daño TRAMPAS
     public void DanoVeneno()
     {
-        tiemporestante = tiemporestante - Time.deltaTime; //Daño continuo de veneno
+        tiemporestante = tiemporestante - Time.deltaTime; //Daño continuo de veneno y fuego
         if (tiemporestante <= 0f)
         {
             vida = vida - 25;
@@ -92,19 +90,13 @@ public class Stats_Player : MonoBehaviour
         }
         
     }
-    void Resetear() //Daño continuo de veneno
+    void Resetear() //Temporizador daño de veneno y fuego
     {
         tiemporestante = tiempo;
     }
 
-    public void DanoFlechas()
+    public void DanoFlechas() // Daño flechas
     {
         vida = vida - 25;
-    }
-    public void DanoFuego() //Daño trigger de fuego
-    {
-        vida = vida - 25;
-    }
-
-
+    }   
 }

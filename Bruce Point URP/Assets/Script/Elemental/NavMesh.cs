@@ -21,17 +21,18 @@ public class NavMesh : MonoBehaviour
     public GameObject Gema;
     public Transform PointerExplosion;
     public Transform PointerGema;
-    // public ParticleSystem Particulaexplosion;
 
     //Variables temporizador ataque
     public float tiempo;
     public float tiemporestante;
 
+    //Variable de vida enemigo
     public int vida;
-
-    
     
     public float retrasoInicial = 2f;
+
+    //Variable para triggers
+    public GameObject triggerFuego;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -154,12 +155,18 @@ public class NavMesh : MonoBehaviour
     {
         
         Destroy(gameObject, 4f);
-        
+        Invoke("OcultarFuego", 2f); //Desactiva trampa de fuego en caso de que sea necesario
     }
     //Gema 
     void GemasPoder()
     {
         Instantiate(Gema, PointerGema.position, transform.rotation);
+    }
+
+    //Trigger fuego para envetos
+    public void OcultarFuego()
+    {
+        triggerFuego.SetActive(false);
     }
 }
 

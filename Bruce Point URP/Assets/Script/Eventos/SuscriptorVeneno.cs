@@ -6,38 +6,51 @@ using UnityEngine;
 public class SuscriptorVeneno : MonoBehaviour
 {
     public GameObject player;
-    public GameObject Flechas;
-    public GameObject ElmEvento;
-    public GameObject Fuego;
+    //FLechas TRAMPAS
+    public GameObject FlechasT1;
+    public GameObject FlechasT2;
+    public GameObject FlechasT3;   
+    public GameObject FlechasT4;
+
+   
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    //invocar flechas en los grupos de trampas tipo FLECHAS de 1 - 3
+    public void InvocarFlechasT1()
     {
-        
+        FlechasT1.SetActive(true);
     }
-    public void InvocarFlechas()
+    public void OcultarFlechasT1()
     {
-        Flechas.SetActive(true);
-    }
-    public void OcultarFlechas()
-    {
-        Flechas.SetActive(false);
+        FlechasT1.SetActive(false);
     }
 
-    public void FuegoActive()
+    public void InvocarFlechasT2()
     {
-        Fuego.SetActive(true);
+        FlechasT2.SetActive(true);
     }
-    public void OcultarFfuego()
+    public void OcultarFlechasT2()
     {
-        if (ElmEvento != null)
-        {
-            Fuego.SetActive(false);
-        }
+        FlechasT2.SetActive(false);
     }
+    public void InvocarFlechasT3()
+    {
+        FlechasT3.SetActive(true);
+    }
+    public void OcultarFlechasT3()
+    {
+        FlechasT3.SetActive(false);
+    }
+    public void InvocarFlechasT4()
+    {
+        FlechasT4.SetActive(true);
+    }
+    public void OcultarFlechasT4()
+    {
+        FlechasT4.SetActive(false);
+    }
+
         
 }

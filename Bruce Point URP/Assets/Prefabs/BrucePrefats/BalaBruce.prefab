@@ -227,6 +227,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
         type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
+        type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0
       objectReference: {fileID: 0}
