@@ -11,6 +11,8 @@ TagManager:
   - Coin
   - Gema
   - Flecha
+  - Veneno
+  - PuertaExplot
   layers:
   - Default
   - TransparentFX
