@@ -7,14 +7,19 @@ public class PuertaaCubo : MonoBehaviour
     public GameObject puertaCubos;
     public GameObject particulaExplosion;
 
-    // Start is called before the first frame update
+    // Tiempo en segundos antes de destruir la partícula de explosión
+    public float tiempoDestruccionParticula = 2f;
 
+    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("AttackPlayer")) // Colisionar con el tag 
         {
             // Instanciar la partícula de explosión
-            Instantiate(particulaExplosion, transform.position, Quaternion.identity);
+            GameObject particula = Instantiate(particulaExplosion, transform.position, Quaternion.identity);
+
+            // Destruir la partícula después de un tiempo especificado
+            Destroy(particula, tiempoDestruccionParticula);
 
             // Dispersar los cubos
             DispersarCubos();
