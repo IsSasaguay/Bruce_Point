@@ -26,6 +26,8 @@ public class PuertaaCubo : MonoBehaviour
 
             // Desactivar la puerta principal
             gameObject.SetActive(false);
+
+            DestruirPuerta();
         }
     }
 
@@ -33,5 +35,10 @@ public class PuertaaCubo : MonoBehaviour
     {
         // Instanciar los cubos dispersos en la misma posición y rotación que la puerta principal
         Instantiate(puertaCubos, transform.position, transform.rotation);
+    }
+
+    public void DestruirPuerta()
+    {
+        Destroy(gameObject, 4f);
     }
 }

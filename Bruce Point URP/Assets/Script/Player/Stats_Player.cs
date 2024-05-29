@@ -31,7 +31,7 @@ public class Stats_Player : MonoBehaviour
             vida = vida - 20;
             Destroy(collision.transform.gameObject);
 
-            if (vida == 0)
+            if (vida <= 0)
             {
                 panel.SetActive(true); // Mensaje de perdiste en la consola
                 Time.timeScale = 0;// El tiempo del juego se detenga
@@ -41,10 +41,10 @@ public class Stats_Player : MonoBehaviour
 
         if (collision.transform.tag == "AtaqueEnemigo")
         {
-            vida = vida - 10;
-            Destroy(collision.transform.gameObject);
+            vida = vida - 5;
+            
 
-            if (vida == 0)
+            if (vida <= 0)
             {
                 panel.SetActive(true);
                 Time.timeScale = 0;
@@ -69,13 +69,33 @@ public class Stats_Player : MonoBehaviour
         {
             DanoFlechas();
             Destroy(collision.transform.gameObject);
+            if (vida <= 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
 
         //Daño por veneno
         if (collision.transform.tag == "Veneno")
         {
             InvokeRepeating ("DanoVeneno", 0f, tiempo); //Daño continuo de veneno y fuego
+            if (vida <= 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
 
+        //Daño por lanzas trampas
+        if (collision.transform.tag == "Flecha")
+        {
+            DanoLanzas();
+            if (vida <= 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 
@@ -98,5 +118,9 @@ public class Stats_Player : MonoBehaviour
     public void DanoFlechas() // Daño flechas
     {
         vida = vida - 25;
-    }   
+    }
+    public void DanoLanzas() // Daño flechas
+    {
+        vida = vida - 25;
+    }
 }
