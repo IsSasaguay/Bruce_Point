@@ -6,7 +6,7 @@ using UnityEngine;
 public class Stats_Player : MonoBehaviour
 {
 
-    public int vida = 100;
+    public static float vida = 150f; //Varaiable estatica vida
     public GameObject panel;
     public int monedas;
     public int gemas;
@@ -31,10 +31,10 @@ public class Stats_Player : MonoBehaviour
             vida = vida - 20;
             Destroy(collision.transform.gameObject);
 
-            if(vida == 0)
+            if (vida == 0)
             {
-                panel.SetActive(true);
-                Time.timeScale = 0;
+                panel.SetActive(true); // Mensaje de perdiste en la consola
+                Time.timeScale = 0;// El tiempo del juego se detenga
             }
 
         }
