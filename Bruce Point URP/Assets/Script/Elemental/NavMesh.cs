@@ -163,7 +163,7 @@ public class NavMesh : MonoBehaviour
         Instantiate(Gema, PointerGema.position, transform.rotation);
     }
 
-    //Trigger fuego para envetos
+    //1 enemigo elemental tiene éste trigger 
     public void OcultarFuego()
     {
         triggerFuego.SetActive(false);

@@ -7,11 +7,15 @@ public class Stats_Player : MonoBehaviour
 {
 
     public static float vida = 150f; //Varaiable estatica vida
+    public static float monedasPuntos;
+    public static float gemas;
+
     public GameObject panel;
-    public int monedas;
-    public int gemas;
+    
+    
     public float tiempo = 1f;
     public float tiemporestante = 0f;
+
     
     void Start()
     {
@@ -53,7 +57,7 @@ public class Stats_Player : MonoBehaviour
         //Contador monedas
         if (collision.transform.tag == "Coin")
         {
-            monedas = monedas + 1;
+            monedasPuntos = monedasPuntos + 1;
             Destroy(collision.transform.gameObject);
         }
 

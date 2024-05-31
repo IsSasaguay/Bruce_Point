@@ -98,7 +98,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.86
+  m_Radius: 1.19
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4732227837431338524
 MonoBehaviour:
@@ -114,11 +114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Direccion: {x: 0, y: 0, z: 2}
   speed: 10
-  particulaExplot: {fileID: 358637981425055526, guid: 8eb503696b886e04faff8fc0f480d473,
-    type: 3}
-  delay: 3
-  radius: 2
-  FuerzaExplot: 100
 --- !u!54 &-3442041667926594886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -250,12 +245,12 @@ PrefabInstance:
     - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7392112127713780199, guid: 66c8b4972d2020a4884879c559ff878d,
         type: 3}
