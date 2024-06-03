@@ -9,6 +9,14 @@ public class Ui_StassBruce : MonoBehaviour
     public Text textoPuntos;
     public Text textoGemas;
 
+    //barras de vida y gemas
+    public Image barraVida;
+    public float vidaActual;
+    public float vidaMaxima = 100f;
+
+    public Image barraGema;
+    public float gemaActual;
+    public float gemaMaxima = 4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +27,16 @@ public class Ui_StassBruce : MonoBehaviour
     void Update()
     {
         // Controlar vida con texto
-        Textovida.text = "Vida:" + Stats_Player.vida;
+        Textovida.text = "" + Stats_Player.vida;
         // Controlar la recoleccion de monedas
-        textoPuntos.text = "Puntos: " + Stats_Player.monedasPuntos;
+        textoPuntos.text = "" + Stats_Player.monedasPuntos;
         // Controlar la recoleccion de gemas
-        textoGemas.text = "Gemas: " + Stats_Player.gemas;
+        textoGemas.text = "" + Stats_Player.gemas;
+        //controlar vida con imagen
+        vidaActual = Stats_Player.vida;
+        barraVida.fillAmount = vidaActual/vidaMaxima;
+        //controlar gema con imagen
+        gemaActual = Stats_Player.gemas;
+        barraGema.fillAmount = gemaActual / gemaMaxima;
     }
 }

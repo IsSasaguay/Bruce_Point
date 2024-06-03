@@ -146,9 +146,7 @@ public class NavMesh : MonoBehaviour
     //Particulaexplosion
     void Explo()
     {
-       Instantiate(Explosion, PointerExplosion.position, transform.rotation);
-       
-        
+       Instantiate(Explosion, PointerExplosion.position, transform.rotation);             
     }
     // Destruye este objeto
     void DestruirObjeto()

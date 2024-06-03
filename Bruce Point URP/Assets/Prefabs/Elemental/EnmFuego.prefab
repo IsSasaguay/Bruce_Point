@@ -283,8 +283,9 @@ MonoBehaviour:
   PointerGema: {fileID: 5907463933330323882}
   tiempo: 2.25
   tiemporestante: 0
-  vida: 80
+  vida: 60
   retrasoInicial: 1
+  triggerFuego: {fileID: 0}
 --- !u!54 &9171894967375945345
 Rigidbody:
   m_ObjectHideFlags: 0

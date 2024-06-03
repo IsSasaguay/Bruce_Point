@@ -335,10 +335,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 0}
-  LookRadius: 50
-  DistanciaAtaque: 25
+  LookRadius: 12
+  DistanciaAtaque: 4
+  Gema: {fileID: 1388044689346095351, guid: 83d169803f44d084e97a26a7cc1331e3, type: 3}
+  PointerGema: {fileID: 2110722621241968241}
   animator: {fileID: 0}
-  vida: 0
+  vida: 100
 --- !u!54 &3928628182350251978
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -438,6 +440,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8a323b6f3883ec4f9bb9a04aed5d72a, type: 3}
+--- !u!4 &2110722621241968241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6358747853158120125, guid: e8a323b6f3883ec4f9bb9a04aed5d72a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004629969314659532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4574364253703966639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8795367879223751523, guid: e8a323b6f3883ec4f9bb9a04aed5d72a,

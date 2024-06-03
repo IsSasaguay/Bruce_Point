@@ -5,18 +5,23 @@ using UnityEngine;
 
 public class Stats_Player : MonoBehaviour
 {
+    public static Stats_Player instance; //
 
-    public static float vida = 150f; //Varaiable estatica vida
+    public static float vida = 100f; //Varaiable estatica vida
     public static float monedasPuntos;
-    public static float gemas;
+    public static float gemas = 3;
 
     public GameObject panel;
-    
+    public Transform pointerDano;
+    public GameObject danoAtaque;
     
     public float tiempo = 1f;
     public float tiemporestante = 0f;
 
-    
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         
@@ -32,8 +37,9 @@ public class Stats_Player : MonoBehaviour
     {
         if (collision.transform.tag == "MagiaEnemigo")
         {
-            vida = vida - 20;
+            vida = vida - 10;
             Destroy(collision.transform.gameObject);
+            Invoke("Dano", 0f);
 
             if (vida <= 0)
             {
@@ -46,7 +52,7 @@ public class Stats_Player : MonoBehaviour
         if (collision.transform.tag == "AtaqueEnemigo")
         {
             vida = vida - 5;
-            
+            Invoke("Dano", 0f);
 
             if (vida <= 0)
             {
@@ -101,6 +107,11 @@ public class Stats_Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+    }
+    //Efectos al recibir daño
+    void Dano()
+    {
+        Instantiate(danoAtaque, pointerDano.position, transform.rotation);
     }
 
     //Daño TRAMPAS

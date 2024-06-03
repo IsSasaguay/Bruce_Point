@@ -12,6 +12,8 @@ public class NavMeshMaya : MonoBehaviour
     //variables para distancias
     public float LookRadius = 50f;
     public float DistanciaAtaque = 25f;
+    public GameObject Gema;
+    public Transform PointerGema;
 
     //variables para ataque
     public Animator animator;
@@ -77,7 +79,7 @@ public class NavMeshMaya : MonoBehaviour
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
-             
+                Invoke("GemasPoder", 4f);
                 DestruirObjeto();
 
             }
@@ -91,7 +93,7 @@ public class NavMeshMaya : MonoBehaviour
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
-                
+                Invoke("GemasPoder", 4f);
                 DestruirObjeto();
 
             }
@@ -120,5 +122,9 @@ public class NavMeshMaya : MonoBehaviour
         // Destruye este objeto
         Destroy(gameObject, 5f);
 
+    }
+    void GemasPoder()
+    {
+        Instantiate(Gema, PointerGema.position, transform.rotation);
     }
 }
