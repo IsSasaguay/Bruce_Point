@@ -13,6 +13,8 @@ TagManager:
   - Flecha
   - Veneno
   - PuertaExplot
+  - FxTemporaire
+  - Curacion
   layers:
   - Default
   - TransparentFX

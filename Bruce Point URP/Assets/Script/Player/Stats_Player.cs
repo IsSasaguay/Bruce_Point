@@ -65,6 +65,12 @@ public class Stats_Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+        //Curacion
+        if (collision.transform.tag == "Curacion")
+        {
+            vida = vida + 25;
+            Destroy(collision.transform.gameObject);
+        }
         //Contador monedas
         if (collision.transform.tag == "Coin")
         {
