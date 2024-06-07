@@ -62,6 +62,9 @@ public class Control_Animation : MonoBehaviour
                 arma.SetActive(false); // Desactivar Arma Bruce
             }
         }
+
+        //Recoleccion de objetos
+
     }
     // Instancia BalaBruce
     void Disparo()
@@ -80,4 +83,6 @@ public class Control_Animation : MonoBehaviour
         tiempoRestante = tiempo;
 
     }
+
+    
 }

@@ -8,6 +8,8 @@ public class DialogoManager : MonoBehaviour
     public Queue<string> sentences;
     public Text NameText;
     public Text dialogueText;
+
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -32,6 +34,7 @@ public class DialogoManager : MonoBehaviour
         }
         string sentece = sentences.Dequeue();
         dialogueText.text= sentece;
+
     }
 
 }

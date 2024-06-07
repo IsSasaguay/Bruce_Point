@@ -67,7 +67,7 @@ public class NavMeshMaya : MonoBehaviour
             agent.speed = 0f;
         }
 
-        Debug.Log(distancia);
+        
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -12,6 +12,7 @@ public class Stats_Player : MonoBehaviour
     public static float gemas = 3;
 
     public GameObject panel;
+    public GameObject panelDialogos;
     public Transform pointerDano;
     public GameObject danoAtaque;
     
@@ -29,6 +30,10 @@ public class Stats_Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+    private void OnTriggerEnter(Collider other)
     {
         
     }
@@ -138,4 +143,10 @@ public class Stats_Player : MonoBehaviour
     {
         vida = vida - 25;
     }
+    //Pausar el juego hasta leer todos los dialogos
+   /* public void PausaPanel()
+    {
+        panelDialogos.SetActive(true);
+        Time.timeScale = 0;
+    }*/
 }

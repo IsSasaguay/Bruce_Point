@@ -28,6 +28,8 @@ public class Thirth_Person_CC : MonoBehaviour
     bool IsJump;
     bool IsLand;
 
+    public GameObject sonidoSalto;
+
 
     void Start()
     {
@@ -97,5 +99,6 @@ public class Thirth_Person_CC : MonoBehaviour
 
     }
 
+    
 
 }
