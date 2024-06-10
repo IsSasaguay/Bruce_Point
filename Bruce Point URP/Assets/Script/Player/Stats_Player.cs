@@ -19,6 +19,9 @@ public class Stats_Player : MonoBehaviour
     public float tiempo = 1f;
     public float tiemporestante = 0f;
 
+
+
+
     private void Awake()
     {
         instance = this;

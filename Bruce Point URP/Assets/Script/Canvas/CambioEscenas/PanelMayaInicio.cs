@@ -23,7 +23,7 @@ public class PanelMayaInicio : MonoBehaviour
         timer += Time.deltaTime;
 
         // Verificar si han pasado dichos segundos
-        if (timer >= 5f)
+        if (timer >= 3f)
         {
             // Desactivar el panel 1
             panel1.SetActive(false);
