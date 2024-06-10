@@ -132,7 +132,9 @@ public class Stats_Player : MonoBehaviour
         if (tiemporestante <= 0f)
         {
             vida = vida - 25;
+            
             Resetear();
+            
         }
         
     }
