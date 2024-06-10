@@ -15,6 +15,7 @@ TagManager:
   - PuertaExplot
   - FxTemporaire
   - Curacion
+  - EstelaRecolectar
   layers:
   - Default
   - TransparentFX
