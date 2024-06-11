@@ -57,7 +57,10 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true); // Mensaje de perdiste en la consola
                 Time.timeScale = 0;// El tiempo del juego se detenga
             }
-
+            else
+            {
+                Time.timeScale = 1;
+            }
         }
 
         if (collision.transform.tag == "AtaqueEnemigo")
@@ -70,6 +73,7 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+            
         }
         //Curacion
         if (collision.transform.tag == "Curacion")
@@ -101,6 +105,7 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+            
         }
 
         //Daño por veneno
@@ -112,6 +117,7 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+            
         }
 
         //Daño por lanzas trampas
@@ -123,6 +129,7 @@ public class Stats_Player : MonoBehaviour
                 panel.SetActive(true);
                 Time.timeScale = 0;
             }
+            
         }
     }
     //Efectos al recibir daño
