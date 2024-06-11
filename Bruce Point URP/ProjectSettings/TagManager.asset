@@ -16,6 +16,7 @@ TagManager:
   - FxTemporaire
   - Curacion
   - EstelaRecolectar
+  - SuperAtack
   layers:
   - Default
   - TransparentFX

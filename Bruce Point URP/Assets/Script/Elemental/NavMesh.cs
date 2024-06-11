@@ -21,6 +21,9 @@ public class NavMesh : MonoBehaviour
     public GameObject Gema;
     public Transform PointerExplosion;
     public Transform PointerGema;
+    //particulas de daño recibido
+    public Transform pointerDano;
+    public GameObject danoAtaque;
 
     //Variables temporizador ataque
     public float tiempo;
@@ -75,10 +78,10 @@ public class NavMesh : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "PatadaPlayer")
+        if (collision.transform.tag == "SuperAtack")
         {
-            vida = vida - 10;
-
+            vida = vida - 200;
+            Invoke("Dano", 0f);
             if (vida <= 0)
             {
                 animator.SetBool("Muerte", true);
@@ -94,7 +97,7 @@ public class NavMesh : MonoBehaviour
         if (collision.transform.tag == "AttackPlayer")
         {
             vida = vida - 20;
-
+            Invoke("Dano", 0f);
             if (vida <= 0)
             {
                 animator.SetBool("Muerte", true);
@@ -165,6 +168,11 @@ public class NavMesh : MonoBehaviour
     public void OcultarFuego()
     {
         triggerFuego.SetActive(false);
+    }
+    //Método de daño recibido
+    void Dano()
+    {
+        Instantiate(danoAtaque, pointerDano.position, transform.rotation);
     }
 }
 

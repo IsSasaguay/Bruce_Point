@@ -13,7 +13,7 @@ public class PuertaaCubo : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("AttackPlayer")) // Colisionar con el tag 
+        if (other.CompareTag("SuperAtack")) // Colisionar con el tag 
         {
             // Instanciar la partícula de explosión
             GameObject particula = Instantiate(particulaExplosion, transform.position, Quaternion.identity);

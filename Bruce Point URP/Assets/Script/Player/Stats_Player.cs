@@ -7,9 +7,12 @@ public class Stats_Player : MonoBehaviour
 {
     public static Stats_Player instance; //
 
+    
+
     public static float vida = 100f; //Varaiable estatica vida
     public static float monedasPuntos;
     public static float gemas = 3;
+    public static float estela;
 
     public GameObject panel;
     public GameObject panelDialogos;
@@ -154,6 +157,8 @@ public class Stats_Player : MonoBehaviour
     {
         vida = vida - 25;
     }
+
+
     //Pausar el juego hasta leer todos los dialogos
    /* public void PausaPanel()
     {

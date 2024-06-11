@@ -339,6 +339,9 @@ MonoBehaviour:
   DistanciaAtaque: 4
   Gema: {fileID: 1388044689346095351, guid: 83d169803f44d084e97a26a7cc1331e3, type: 3}
   PointerGema: {fileID: 2110722621241968241}
+  pointerDano: {fileID: 4477285527603382307}
+  danoAtaque: {fileID: 7298298020108352930, guid: c6d7fb1e52819c0479131e12b8d741dc,
+    type: 3}
   animator: {fileID: 0}
   vida: 100
 --- !u!54 &3928628182350251978
@@ -443,6 +446,12 @@ PrefabInstance:
 --- !u!4 &2110722621241968241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6358747853158120125, guid: e8a323b6f3883ec4f9bb9a04aed5d72a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004629969314659532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4477285527603382307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8887439375433610479, guid: e8a323b6f3883ec4f9bb9a04aed5d72a,
     type: 3}
   m_PrefabInstance: {fileID: 5004629969314659532}
   m_PrefabAsset: {fileID: 0}

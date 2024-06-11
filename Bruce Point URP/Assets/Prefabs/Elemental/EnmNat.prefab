@@ -281,6 +281,9 @@ MonoBehaviour:
   Gema: {fileID: 1388044689346095351, guid: 83d169803f44d084e97a26a7cc1331e3, type: 3}
   PointerExplosion: {fileID: 1801315294123880987}
   PointerGema: {fileID: 5629815516921176650}
+  pointerDano: {fileID: 7944142562004582954}
+  danoAtaque: {fileID: 1885663216048494773, guid: c6f2e375ac5785a48a647f649fa5aa37,
+    type: 3}
   tiempo: 2.25
   tiemporestante: 0
   vida: 60
@@ -436,6 +439,12 @@ Transform:
 --- !u!4 &5629815516921176650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2331525720156787621, guid: fee19101a1f8204409b20987f928346d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7960711748819907055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7944142562004582954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 19530322633307077, guid: fee19101a1f8204409b20987f928346d,
     type: 3}
   m_PrefabInstance: {fileID: 7960711748819907055}
   m_PrefabAsset: {fileID: 0}

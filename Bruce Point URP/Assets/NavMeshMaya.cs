@@ -14,6 +14,9 @@ public class NavMeshMaya : MonoBehaviour
     public float DistanciaAtaque = 25f;
     public GameObject Gema;
     public Transform PointerGema;
+    //particulas de daño recibido
+    public Transform pointerDano;
+    public GameObject danoAtaque;
 
     //variables para ataque
     public Animator animator;
@@ -72,10 +75,10 @@ public class NavMeshMaya : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "PatadaPlayer") //Ataque patada Bruce
+        if (collision.transform.tag == "SuperAtack") //Ataque patada Bruce
         {
-            vida = vida - 10;
-
+            vida = vida - 200;
+            Invoke("Dano", 0f);
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
@@ -89,7 +92,7 @@ public class NavMeshMaya : MonoBehaviour
         if (collision.transform.tag == "AttackPlayer") //Ataque disparo bruce
         {
             vida = vida - 20;
-
+            Invoke("Dano", 0f);
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
@@ -126,5 +129,10 @@ public class NavMeshMaya : MonoBehaviour
     void GemasPoder()
     {
         Instantiate(Gema, PointerGema.position, transform.rotation);
+    }
+    //Método de daño recibido
+    void Dano()
+    {
+        Instantiate(danoAtaque, pointerDano.position, transform.rotation);
     }
 }
