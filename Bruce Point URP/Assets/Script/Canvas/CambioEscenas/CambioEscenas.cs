@@ -20,6 +20,7 @@ public class CambioEscenas : MonoBehaviour
     public void CargarEscena1()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     //Panel de Opciones
@@ -59,5 +60,10 @@ public class CambioEscenas : MonoBehaviour
     {
         panelNiveles.SetActive(false);
     }
+    public void TimeScale()
+    {
+        Time.timeScale = 1;
+    }
 
+    
 }

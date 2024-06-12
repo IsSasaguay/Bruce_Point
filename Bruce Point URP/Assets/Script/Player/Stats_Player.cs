@@ -131,6 +131,17 @@ public class Stats_Player : MonoBehaviour
             }
             
         }
+        //Daño por Neblina
+        if (collision.transform.tag == "Neblina")
+        {
+            MuerteNeblina();
+            if (vida <= 0)
+            {
+                panel.SetActive(true);
+                Time.timeScale = 0;
+            }
+
+        }
     }
     //Efectos al recibir daño
     void Dano()
@@ -165,7 +176,10 @@ public class Stats_Player : MonoBehaviour
         vida = vida - 25;
     }
 
-
+    void MuerteNeblina()
+    {
+        vida = vida - vida;
+    }
     //Pausar el juego hasta leer todos los dialogos
    /* public void PausaPanel()
     {
