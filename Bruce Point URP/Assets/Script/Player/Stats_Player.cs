@@ -31,7 +31,9 @@ public class Stats_Player : MonoBehaviour
     }
     void Start()
     {
-        
+        vida = 100;
+        gemas = 3;
+        monedasPuntos = 0;
     }
 
     // Update is called once per frame
