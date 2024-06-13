@@ -11,9 +11,9 @@ public class PuertaaCubo : MonoBehaviour
     public float tiempoDestruccionParticula = 2f;
 
     // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("SuperAtack")) // Colisionar con el tag 
+        if (collision.transform.tag == "SuperAtack") // Colisionar con el tag 
         {
             // Instanciar la partícula de explosión
             GameObject particula = Instantiate(particulaExplosion, transform.position, Quaternion.identity);

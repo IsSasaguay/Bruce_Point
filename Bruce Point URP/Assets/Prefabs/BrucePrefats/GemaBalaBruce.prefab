@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Direccion: {x: 0, y: 0, z: 3}
-  speed: 12
+  speed: 10
 --- !u!1001 &4442778455404771629
 PrefabInstance:
   m_ObjectHideFlags: 0
