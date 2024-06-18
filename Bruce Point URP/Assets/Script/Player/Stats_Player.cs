@@ -180,7 +180,7 @@ public class Stats_Player : MonoBehaviour
 
     void MuerteNeblina()
     {
-        vida = vida - vida;
+        vida = 0;
     }
     //Pausar el juego hasta leer todos los dialogos
    /* public void PausaPanel()
