@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class Stats_Player : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class Stats_Player : MonoBehaviour
     
     public float tiempo = 1f;
     public float tiemporestante = 0f;
+
+    public AudioSource Source;
+    public AudioClip ClipGameOver;
 
 
 
@@ -57,6 +61,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true); // Mensaje de perdiste en la consola
+                EfectGameOver();
                 Time.timeScale = 0;// El tiempo del juego se detenga
             }
             else
@@ -73,6 +78,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
+                EfectGameOver();
                 Time.timeScale = 0;
             }
             
@@ -105,6 +111,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
+                EfectGameOver();
                 Time.timeScale = 0;
             }
             
@@ -117,6 +124,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
+                EfectGameOver();
                 Time.timeScale = 0;
             }
             
@@ -129,6 +137,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
+                EfectGameOver();
                 Time.timeScale = 0;
             }
             
@@ -140,6 +149,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
+                EfectGameOver();
                 Time.timeScale = 0;
             }
 
@@ -183,9 +193,14 @@ public class Stats_Player : MonoBehaviour
         vida = 0;
     }
     //Pausar el juego hasta leer todos los dialogos
-   /* public void PausaPanel()
+    /* public void PausaPanel()
+     {
+         panelDialogos.SetActive(true);
+         Time.timeScale = 0;
+     }*/
+    //Metodos para sonidos de panel GameOver
+    public void EfectGameOver()
     {
-        panelDialogos.SetActive(true);
-        Time.timeScale = 0;
-    }*/
+        Source.PlayOneShot(ClipGameOver);
+    }
 }

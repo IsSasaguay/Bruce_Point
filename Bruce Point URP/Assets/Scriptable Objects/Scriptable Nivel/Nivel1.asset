@@ -15,4 +15,4 @@ MonoBehaviour:
   nombreNivel: 12 Baktun
   descripcionNivel: El templo maya guarda un secrteto que la princesa Josefina busca
     con anhelo
-  imagenNivel: {fileID: 21300000, guid: 5ffe59dd1f6809443b476bccc07da509, type: 3}
+  imagenNivel: {fileID: 21300000, guid: b35e685ae1c502447934bf49a0cdea00, type: 3}

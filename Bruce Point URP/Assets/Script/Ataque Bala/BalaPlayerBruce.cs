@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class BalaPlayerBruce : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class BalaPlayerBruce : MonoBehaviour
     {
         Destroy(gameObject, 2f);
     }
+    
 
     // Update is called once per frame
     void Update()

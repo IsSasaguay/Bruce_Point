@@ -38,7 +38,7 @@ public class NavMeshMaya : MonoBehaviour
         {
             agent.SetDestination(pointer.position);
             animator.SetBool("Walking", true);
-            agent.speed = 5f;
+            agent.speed = 4f;
             bool attack01;
             bool attack02;
             if (distancia <= DistanciaAtaque)
@@ -78,6 +78,7 @@ public class NavMeshMaya : MonoBehaviour
         if (collision.transform.tag == "SuperAtack") //Ataque patada Bruce
         {
             vida = vida - 200;
+            Destroy(collision.transform.gameObject);
             Invoke("Dano", 0f);
             if (vida <= 0)
             {
@@ -92,11 +93,12 @@ public class NavMeshMaya : MonoBehaviour
         if (collision.transform.tag == "AttackPlayer") //Ataque disparo bruce
         {
             vida = vida - 20;
+            Destroy(collision.transform.gameObject);
             Invoke("Dano", 0f);
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
-                Invoke("GemasPoder", 4f);
+                Invoke("GemasPoder", 3f);
                 DestruirObjeto();
 
             }
@@ -123,7 +125,7 @@ public class NavMeshMaya : MonoBehaviour
     void DestruirObjeto()
     {
         // Destruye este objeto
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 3.5f);
 
     }
     void GemasPoder()
