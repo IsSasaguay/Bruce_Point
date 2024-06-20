@@ -9,6 +9,11 @@ public class NavMeshMaya : MonoBehaviour
     private NavMeshAgent agent;
     public Transform pointer;
 
+    //variables audio de muerte
+    public AudioClip deathSound;
+    private AudioSource audioSource;
+
+
     //variables para distancias
     public float LookRadius = 50f;
     public float DistanciaAtaque = 25f;
@@ -18,15 +23,21 @@ public class NavMeshMaya : MonoBehaviour
     public Transform pointerDano;
     public GameObject danoAtaque;
 
-    //variables para ataque
+    //variables para animaciones de ataque
     public Animator animator;
 
     //variables para vida
     public int vida;
     void Start()
     {
+        audioSource = GetComponent<AudioSource>(); // Obtener componente AudioSource
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
@@ -83,6 +94,13 @@ public class NavMeshMaya : MonoBehaviour
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
+
+                // Reproducir el sonido de muerte si está configurado
+                if (deathSound != null && audioSource != null)
+                {
+                    audioSource.PlayOneShot(deathSound);
+                }
+
                 Invoke("GemasPoder", 4f);
                 DestruirObjeto();
 
@@ -98,6 +116,11 @@ public class NavMeshMaya : MonoBehaviour
             if (vida <= 0)
             {
                 animator.SetBool("Dyeing", true);
+                // Reproducir el sonido de muerte si está configurado
+                if (deathSound != null && audioSource != null)
+                {
+                    audioSource.PlayOneShot(deathSound);
+                }
                 Invoke("GemasPoder", 3f);
                 DestruirObjeto();
 

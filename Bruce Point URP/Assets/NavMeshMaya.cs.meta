@@ -3,7 +3,14 @@ guid: 2f437a65a6c5ab744932f6bf1736ef89
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pointer: {instanceID: 0}
+  - deathSound: {fileID: 8300000, guid: 18d58f27fffcfd84aabb920a792c21ef, type: 3}
+  - Gema: {instanceID: 0}
+  - PointerGema: {instanceID: 0}
+  - pointerDano: {instanceID: 0}
+  - danoAtaque: {instanceID: 0}
+  - animator: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
