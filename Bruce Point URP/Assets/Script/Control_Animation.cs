@@ -8,10 +8,10 @@ public class Control_Animation : MonoBehaviour
     public GameObject arma; // Objeto Arma Bruce
     
     const float AnimationSmoothTime = 0.05f;
-    public GameObject BalaPlayer; // Objeto bala Bruce
-    public GameObject BalaGema; // Objeto bala Gema Bruce
-    public Transform PointerBala; // Objeto Pointer de arma
     
+    public GameObject BalaGema; // Objeto bala Gema Bruce
+     public Transform PointerBala; // Objeto Pointer de arma
+     
 
 
     public float tiempo; // Temporizador
@@ -55,32 +55,34 @@ public class Control_Animation : MonoBehaviour
             if (arma != null)
             {
                 arma.SetActive(true); // Activar Arma Bruce
-                Disparo(); // Llamar al método Disparo para instanciar la bala
+                //Disparo(); // Llamar al método Disparo para instanciar la bala
             }
         }
         else if (Stats_Player.gemas >= 4)
         {
             if (Input.GetKey(KeyCode.G))
             {
-               animator.SetBool("PistolaAttack", true);
+               
                 Invoke("ResetearGema", 2f);
                 if (arma != null)
                 {
-                    
+                    animator.SetBool("PistolaGema", true);
                     arma.SetActive(true); // Activar Arma Bruce
-                    Invoke("InstanciaGemaDisparo", 1f); // Llamar al método Disparo para instanciar la bala gema
+                    Invoke("InstanciaGemaDisparo", 0.5f); // Llamar al método Disparo para instanciar la bala gema
                     
                 }
-            }
-        else
-        {
-           animator.SetBool("PistolaAttack", false);
-            if (arma != null)
-              {
-                arma.SetActive(false); // Desactivar Arma Bruce
                 
-              }
-        }
+            }
+
+            else
+            {
+                Invoke("DetenrDisparo", 1f);
+                if (arma != null)
+                  {
+                    arma.SetActive(false); // Desactivar Arma Bruce
+                
+                  }
+            }
         }
         
         else
@@ -94,7 +96,7 @@ public class Control_Animation : MonoBehaviour
 
     }
     // Instancia BalaBruce
-    void Disparo()
+    /*void Disparo()
     {
         tiempoRestante = tiempoRestante - Time.deltaTime;
         if (tiempoRestante <= 0)
@@ -103,7 +105,7 @@ public class Control_Animation : MonoBehaviour
             Resetear();
         }
 
-    }
+    }*/
    
     // Instancia BalaGema
     void InstanciaGemaDisparo()
@@ -114,6 +116,11 @@ public class Control_Animation : MonoBehaviour
             Instantiate(BalaGema, PointerBala.position, transform.rotation);
             Resetear();
         }
+    }
+    void DetenrDisparo ()
+    {
+        animator.SetBool("PistolaGema", false);
+        arma.SetActive(false);
     }
     void ResetearGema() 
     {

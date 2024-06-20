@@ -15,5 +15,5 @@ MonoBehaviour:
   nombreNivel: Un visitante de otro mundo
   descripcionNivel: "Despu\xE9s de entregar la estela Maya a la princesa Josefina,
     Bruce se aventura a recorrer los desiertos de Arizona para liberar a la criatura
-    cautiva en el \xC1rea 51"
+    cautiva en el \xC1rea 51."
   imagenNivel: {fileID: 21300000, guid: 38d39cf82b781e649811b22076d5d9a2, type: 3}

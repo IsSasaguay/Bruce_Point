@@ -9,6 +9,8 @@ public class DialogoManager : MonoBehaviour
     public Text NameText;
     public Text dialogueText;
 
+    [SerializeField] private AudioClip BotonSound;
+
 
     void Start()
     {
@@ -34,7 +36,7 @@ public class DialogoManager : MonoBehaviour
         }
         string sentece = sentences.Dequeue();
         dialogueText.text= sentece;
-
+        ManagerAudio.unicaInstancia.PlaySound(BotonSound);
     }
 
 }

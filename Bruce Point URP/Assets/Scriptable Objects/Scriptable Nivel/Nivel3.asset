@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombreNivel: La guitarra de Jhon Lemon
   descripcionNivel: "Bruce en su siguiente aventura debe recorrer el estadio de Liverpool
-    donde el gran cantante de la \xE9poca presentar\xE1 su concierto m\xE1s grande"
+    donde el gran cantante de la \xE9poca presentar\xE1 su concierto m\xE1s grande."
   imagenNivel: {fileID: 21300000, guid: 48b6ebb975419974c991922164a6c977, type: 3}
