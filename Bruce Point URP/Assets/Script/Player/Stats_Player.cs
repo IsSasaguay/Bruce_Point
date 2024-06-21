@@ -7,7 +7,6 @@ using static Unity.VisualScripting.Member;
 public class Stats_Player : MonoBehaviour
 {
     public static Stats_Player instance; //
-
     
 
     public static float vida = 100f; //Varaiable estatica vida
@@ -24,9 +23,7 @@ public class Stats_Player : MonoBehaviour
     public float tiemporestante = 0f;
 
     public AudioSource Source;
-    public AudioClip ClipGameOver;
-
-
+    public AudioClip ClipGameOver;  
 
 
     private void Awake()
@@ -182,10 +179,12 @@ public class Stats_Player : MonoBehaviour
     public void DanoFlechas() // Daño flechas
     {
         vida = vida - 25;
+        
     }
     public void DanoLanzas() // Daño flechas
     {
         vida = vida - 25;
+        
     }
 
     void MuerteNeblina()
@@ -198,6 +197,12 @@ public class Stats_Player : MonoBehaviour
          panelDialogos.SetActive(true);
          Time.timeScale = 0;
      }*/
+
+    public void Continuar()
+    {
+        panel.SetActive(false);
+        Time.timeScale = 1;
+    }
     //Metodos para sonidos de panel GameOver
     public void EfectGameOver()
     {
