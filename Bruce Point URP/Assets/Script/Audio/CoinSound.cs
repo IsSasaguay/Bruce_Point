@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class CoinSound : MonoBehaviour
 {
-    
     [SerializeField] private AudioClip coinSound;
-   
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             ManagerAudio.unicaInstancia.PlaySound(coinSound);
             Destroy(gameObject);
-            
         }
-    }
-    
-    void Update()
-    {
-        
     }
 }
