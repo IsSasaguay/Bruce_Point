@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Thirth_Person_CC : MonoBehaviour
 {
@@ -30,10 +31,12 @@ public class Thirth_Person_CC : MonoBehaviour
 
     public GameObject sonidoSalto;
 
+   
 
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -98,7 +101,6 @@ public class Thirth_Person_CC : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
-
     
 
 }

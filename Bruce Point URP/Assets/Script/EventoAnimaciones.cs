@@ -24,11 +24,15 @@ public class EventoAnimaciones : MonoBehaviour
     {
         Source.PlayOneShot(ClipAttackSuper);
         Instantiate(particulaAttackSuper, particulaPointer);
-        Instantiate(BalaGema, particulaPointer);
+        Invoke("RetrasoDisparoGema", 0.2f);
     }
     public void EfectoSalto()
     {
         Source.PlayOneShot(ClipSalto);
         
+    }
+    void RetrasoDisparoGema()
+    {
+        Instantiate(BalaGema, particulaPointer);
     }
 }

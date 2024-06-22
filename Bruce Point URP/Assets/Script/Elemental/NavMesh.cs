@@ -132,7 +132,7 @@ public class NavMesh : MonoBehaviour
     }
 
     //Isntanciar ataque
-    void DisparaMagia()
+   /* void DisparaMagia()
     {
         tiemporestante = tiemporestante - Time.deltaTime;
 
@@ -141,7 +141,7 @@ public class NavMesh : MonoBehaviour
             Instantiate(Ataque, PointerAtaque.position, transform.rotation);
             Resetear();
         }
-    }
+    }*/
     void Resetear()
     {
         tiemporestante = tiempo;

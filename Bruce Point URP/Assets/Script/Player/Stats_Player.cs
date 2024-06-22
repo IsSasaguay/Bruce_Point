@@ -7,14 +7,15 @@ using static Unity.VisualScripting.Member;
 public class Stats_Player : MonoBehaviour
 {
     public static Stats_Player instance; //
-    
+
 
     public static float vida = 100f; //Varaiable estatica vida
     public static float monedasPuntos;
     public static float gemas = 3;
     public static float estela;
+    
 
-    public GameObject panel;
+    public  GameObject panel;
     public GameObject panelDialogos;
     public Transform pointerDano;
     public GameObject danoAtaque;
@@ -23,7 +24,9 @@ public class Stats_Player : MonoBehaviour
     public float tiemporestante = 0f;
 
     public AudioSource Source;
-    public AudioClip ClipGameOver;  
+    public AudioClip ClipGameOver;
+
+    public Vector3 lastCheckpoint;
 
 
     private void Awake()
@@ -37,15 +40,22 @@ public class Stats_Player : MonoBehaviour
         monedasPuntos = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        if (vida <= 0)
+        {
+            GetComponent<CharacterController>().enabled = false;
+            transform.position = lastCheckpoint;
+            panel.SetActive(true);
+            GetComponent<CharacterController>().enabled = true;
+            vida = CheckPoint.vida;
+            gemas = CheckPoint.gema;
+            monedasPuntos = CheckPoint.monedas;
+            
+        }
+
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -57,9 +67,9 @@ public class Stats_Player : MonoBehaviour
 
             if (vida <= 0)
             {
-                panel.SetActive(true); // Mensaje de perdiste en la consola
+                
                 EfectGameOver();
-                Time.timeScale = 0;// El tiempo del juego se detenga
+                ;// El tiempo del juego se detenga
             }
             else
             {
@@ -74,9 +84,8 @@ public class Stats_Player : MonoBehaviour
 
             if (vida <= 0)
             {
-                panel.SetActive(true);
                 EfectGameOver();
-                Time.timeScale = 0;
+                
             }
             
         }
@@ -107,9 +116,9 @@ public class Stats_Player : MonoBehaviour
             Destroy(collision.transform.gameObject);
             if (vida <= 0)
             {
-                panel.SetActive(true);
+                
                 EfectGameOver();
-                Time.timeScale = 0;
+                
             }
             
         }
@@ -121,8 +130,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
-                EfectGameOver();
-                Time.timeScale = 0;
+                
             }
             
         }
@@ -133,9 +141,8 @@ public class Stats_Player : MonoBehaviour
             DanoLanzas();
             if (vida <= 0)
             {
-                panel.SetActive(true);
                 EfectGameOver();
-                Time.timeScale = 0;
+                
             }
             
         }
@@ -145,9 +152,9 @@ public class Stats_Player : MonoBehaviour
             MuerteNeblina();
             if (vida <= 0)
             {
-                panel.SetActive(true);
+                
                 EfectGameOver();
-                Time.timeScale = 0;
+                
             }
 
         }
@@ -200,6 +207,7 @@ public class Stats_Player : MonoBehaviour
 
     public void Continuar()
     {
+        
         panel.SetActive(false);
         Time.timeScale = 1;
     }
@@ -208,4 +216,6 @@ public class Stats_Player : MonoBehaviour
     {
         Source.PlayOneShot(ClipGameOver);
     }
+    
+
 }

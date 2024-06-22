@@ -335,6 +335,37 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.39691615, z: 0.069781005}
     m_Extent: {x: 0.14990088, y: 0.1652392, z: 0.08886586}
   m_DirtyAABB: 0
+--- !u!1 &848116792210510191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6189165764772445277}
+  m_Layer: 0
+  m_Name: PointerAtaque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6189165764772445277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848116792210510191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8145122299056535270}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888897143064167055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1422,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2012631233207826945}
+  - {fileID: 6189165764772445277}
   m_Father: {fileID: 6511025403062934213}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2236,6 +2268,8 @@ MonoBehaviour:
   Source: {fileID: 5859972557613035129}
   ClipAttack: {fileID: 8300000, guid: 0927a231aa16885458298b754d9936ec, type: 3}
   ClipIddle: {fileID: 8300000, guid: d2f91516ef361774796d0cf24c42c5af, type: 3}
+  Poder: {fileID: 3272460085612964009, guid: 43f84b14d61c71047b90d41d5f312c30, type: 3}
+  particulaPointer: {fileID: 6189165764772445277}
 --- !u!1 &5871306977954812640
 GameObject:
   m_ObjectHideFlags: 0
