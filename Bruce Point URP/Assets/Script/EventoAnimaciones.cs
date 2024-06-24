@@ -12,7 +12,7 @@ public class EventoAnimaciones : MonoBehaviour
     public GameObject particulaAttack;
     public GameObject particulaAttackSuper;
     public GameObject Bala;
-    public GameObject BalaGema;
+    
 
     public void EfectAttack()
     {
@@ -24,15 +24,12 @@ public class EventoAnimaciones : MonoBehaviour
     {
         Source.PlayOneShot(ClipAttackSuper);
         Instantiate(particulaAttackSuper, particulaPointer);
-        Invoke("RetrasoDisparoGema", 0.2f);
+        
     }
     public void EfectoSalto()
     {
         Source.PlayOneShot(ClipSalto);
         
     }
-    void RetrasoDisparoGema()
-    {
-        Instantiate(BalaGema, particulaPointer);
-    }
+    
 }

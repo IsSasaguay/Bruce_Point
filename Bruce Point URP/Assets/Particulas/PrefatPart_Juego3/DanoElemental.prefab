@@ -65,7 +65,25 @@ PrefabInstance:
     - target: {fileID: 632540260075961735, guid: bb0e680b720cefe42b3e5e8e7763059c,
         type: 3}
       propertyPath: m_Name
-      value: Part_Humo Golpe
+      value: DanoElemental
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0e680b720cefe42b3e5e8e7763059c, type: 3}
+--- !u!1 &1885663216048494773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 632540260075961735, guid: bb0e680b720cefe42b3e5e8e7763059c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1363469974120867122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1195373757549334643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885663216048494773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9ababc2f3b20a4e8ccd3af8948b0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

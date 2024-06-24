@@ -9,7 +9,7 @@ public class Control_Animation : MonoBehaviour
     
     const float AnimationSmoothTime = 0.05f;
     
-    public GameObject BalaGema; // Objeto bala Gema Bruce
+   public GameObject BalaGema; // Objeto bala Gema Bruce
      public Transform PointerBala; // Objeto Pointer de arma
      
 
@@ -69,7 +69,7 @@ public class Control_Animation : MonoBehaviour
                     animator.SetBool("PistolaGema", true);
                     arma.SetActive(true); // Activar Arma Bruce
                     Invoke("InstanciaGemaDisparo", 0.5f); // Llamar al método Disparo para instanciar la bala gema
-                    
+                    Invoke("DetenrDisparo", 1.2f);
                 }
                 
             }
@@ -77,7 +77,7 @@ public class Control_Animation : MonoBehaviour
             else
             {
                 animator.SetBool("PistolaAttack", false);
-                Invoke("DetenrDisparo", 1.2f);
+                
                 if (arma != null)
                   {
                     arma.SetActive(false); // Desactivar Arma Bruce
@@ -108,8 +108,8 @@ public class Control_Animation : MonoBehaviour
 
     }*/
    
-    // Instancia BalaGema
-    /*void InstanciaGemaDisparo()
+    //Instancia BalaGema
+    void InstanciaGemaDisparo()
     {
         tiempoRestante = tiempoRestante - Time.deltaTime;
         if (tiempoRestante <= 0)
@@ -117,7 +117,7 @@ public class Control_Animation : MonoBehaviour
             Instantiate(BalaGema, PointerBala.position, transform.rotation);
             Resetear();
         }
-    }*/
+    }
     void DetenrDisparo ()
     {
         animator.SetBool("PistolaGema", false);

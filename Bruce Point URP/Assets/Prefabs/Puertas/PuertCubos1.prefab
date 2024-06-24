@@ -2632,6 +2632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6017718089829379537}
   - component: {fileID: 4325848770102329136}
+  - component: {fileID: 5525122362149611376}
   m_Layer: 0
   m_Name: PuertCubos1
   m_TagString: PuertaExplot
@@ -2787,6 +2788,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5525122362149611376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397620645320505195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9ababc2f3b20a4e8ccd3af8948b0c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6510153943032576062
 GameObject:
   m_ObjectHideFlags: 0
