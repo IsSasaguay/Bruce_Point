@@ -96,17 +96,7 @@ public class Control_Animation : MonoBehaviour
         }
 
     }
-    // Instancia BalaBruce
-    /*void Disparo()
-    {
-        tiempoRestante = tiempoRestante - Time.deltaTime;
-        if (tiempoRestante <= 0)
-        {
-            Instantiate(BalaPlayer, PointerBala.position, transform.rotation);
-            Resetear();
-        }
-
-    }*/
+    
    
     //Instancia BalaGema
     void InstanciaGemaDisparo()
@@ -134,5 +124,15 @@ public class Control_Animation : MonoBehaviour
 
     }
 
-    
+    // Instancia BalaBruce
+    /*void Disparo()
+    {
+        tiempoRestante = tiempoRestante - Time.deltaTime;
+        if (tiempoRestante <= 0)
+        {
+            Instantiate(BalaPlayer, PointerBala.position, transform.rotation);
+            Resetear();
+        }
+
+    }*/
 }
