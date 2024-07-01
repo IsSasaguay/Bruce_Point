@@ -718,6 +718,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &250667601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,6 +891,18 @@ MonoBehaviour:
       - m_Target: {fileID: 477430467}
         m_TargetAssemblyTypeName: CambioEscenas, Assembly-CSharp
         m_MethodName: MenuAudioOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SalirSonido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2240,6 +2264,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &682708537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,6 +2400,18 @@ MonoBehaviour:
       - m_Target: {fileID: 477430467}
         m_TargetAssemblyTypeName: CambioEscenas, Assembly-CSharp
         m_MethodName: MenuOpciones
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2573,6 +2621,18 @@ MonoBehaviour:
       - m_Target: {fileID: 477430467}
         m_TargetAssemblyTypeName: CambioEscenas, Assembly-CSharp
         m_MethodName: MenuOpcionesOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SalirSonido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3209,6 +3269,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &966441164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3422,6 +3494,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SalirSonido
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &985733804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3622,6 +3706,18 @@ MonoBehaviour:
       - m_Target: {fileID: 477430467}
         m_TargetAssemblyTypeName: CambioEscenas, Assembly-CSharp
         m_MethodName: MenuNivelesOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SalirSonido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3852,6 +3948,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4658,6 +4766,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1281421672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5311,6 +5431,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1421234349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5526,6 +5658,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1907391714}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoBoton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6364,6 +6508,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1907391712}
   - component: {fileID: 1907391711}
+  - component: {fileID: 1907391713}
+  - component: {fileID: 1907391714}
   m_Layer: 0
   m_Name: ManagerAudio
   m_TagString: Untagged
@@ -6483,6 +6629,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907391713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907391710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b59c5ab08626e4a8a6ddd0b78e9636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1907391714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907391710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80862532cb9c5bf4bba56948dad9f01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonSound: {fileID: 8300000, guid: 8c080dbf9ab34464991419cc90ab114d, type: 3}
+  BotonSalirSound: {fileID: 8300000, guid: c3787687a2fe8a64cadc0040b8b08f94, type: 3}
 --- !u!1 &1944452067
 GameObject:
   m_ObjectHideFlags: 0

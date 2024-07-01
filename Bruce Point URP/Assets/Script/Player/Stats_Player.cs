@@ -130,7 +130,7 @@ public class Stats_Player : MonoBehaviour
             if (vida <= 0)
             {
                 panel.SetActive(true);
-                
+                EfectGameOver();
             }
             
         }
